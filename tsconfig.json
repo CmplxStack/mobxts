@@ -1,16 +1,13 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "rootDir": ".",
-    "baseUrl":"./",
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "baseUrl":".",
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["es2017", "dom"],
     "strict": true,
     "allowJs": true,
-    "module": "commonjs",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -20,14 +17,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
+    "sourceMap": true,
     "incremental": true,
-    "paths": {
-      "*": ["src/*"],
-      "@assets/*":["src/assets/*"],
-    },
-    "outDir":"./lib"
+    "experimentalDecorators": true,
+    "noUnusedLocals": false
+    // "outDir":"./lib",
   },
   "include": [
-    "./src",
-  ]
+    "src/**/*",
+  ],
+  "exclude": ["node_modules"]
 }
