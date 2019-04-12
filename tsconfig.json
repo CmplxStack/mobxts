@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "baseUrl":"src",
+    "baseUrl":"./",
     "target": "es5",
     "lib": [
       "dom",
@@ -16,22 +16,14 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
->>>>>>> Ejected
-=======
->>>>>>> Ejected, RHL, MOBX
-=======
->>>>>>> Ejecting
-=======
->>>>>>> Ejecting
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
     "incremental": true,
     "paths": {
-      "@assets/*":["assets/*"],
+      "*": ["src/*"],
+      "@assets/*":["src/assets/*"],
     },
     "outDir":"./lib"
   },

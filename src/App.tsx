@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 import logo from '@assets/logo.svg';
 import './App.css';
-
 class App extends Component {
   render(): JSX.Element {
     return (
