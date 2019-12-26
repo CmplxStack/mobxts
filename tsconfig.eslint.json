@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src",
+    "config",
+    "scripts",
+    // "**/*.ts",
+    // "**/*.tsx",
+    // "**/*.js",
+    "functions"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  },
+  "exclude": ["node_modules", "build", "dist"]
+}
