@@ -2,9 +2,9 @@ import "./rhlConfig";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./views/App";
+import App from "./Views/App";
 import * as serviceWorker from "./serviceWorker";
-import { rootStore, Provider } from "@stores";
+import { rootStore, Provider } from "~Stores";
 
 ReactDOM.render(
   <Provider value={rootStore}>

@@ -2,7 +2,7 @@ import { hot } from "react-hot-loader/root";
 import React from "react";
 import { Button } from "@material-ui/core";
 import { observer, useObserver } from "mobx-react-lite";
-import { useMST } from "@src/stores";
+import { useMST } from "~Stores";
 
 // Using global hook alone
 export const Counter = hot(

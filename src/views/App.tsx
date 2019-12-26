@@ -1,8 +1,8 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
-import logo from "@assets/logo.svg";
+import logo from "~Assets/logo.svg";
 import "./App.css";
-import { Counter, Counter2 } from "@components/Counter";
+import { Counter, Counter2 } from "~Components";
 
 const App: React.FC = () => {
   return (

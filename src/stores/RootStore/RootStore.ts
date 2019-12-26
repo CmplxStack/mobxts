@@ -1,6 +1,6 @@
 import { useContext, createContext } from "react";
 import { types, Instance, onSnapshot } from "mobx-state-tree";
-import { CounterStore, COUNTER_STORE } from "../CounterStore";
+import { CounterStore, COUNTER_STORE } from "~Stores/CounterStore";
 
 const RootModel = types.model("ROOT_STORE", {
   [COUNTER_STORE]: CounterStore,
