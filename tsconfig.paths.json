@@ -2,10 +2,14 @@
   "compilerOptions":{
     "baseUrl": ".",
     "paths": {
-      "@*": ["*"],
-      "@assets/*":["src/assets/*"],
-      "@components/*":["src/components/*"],
-      "@stores/*":["src/stores/*"]
+      "~Assets":["src/Assets/index.ts"],
+      "~Assets/*":["src/Assets/*"],
+      "~Components":["src/Components/index.ts"],
+      "~Components/*":["src/Components/*"],
+      "~Stores":["src/Stores/index.ts"],
+      "~Stores/*":["src/Stores/*"],
+      "~Views":["src/Views/index.ts"],
+      "~Views/*":["src/Views/*"]
     },
   }
 }

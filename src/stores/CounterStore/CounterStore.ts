@@ -1,12 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
-import {
-  types,
-  Instance,
-  ModelInstanceTypeProps,
-  SnapshotOut,
-  SnapshotIn,
-  getSnapshot,
-} from "mobx-state-tree";
+import { types, Instance, SnapshotOut, SnapshotIn } from "mobx-state-tree";
 
 export const COUNTER_STORE = "COUNTER_STORE";
 
