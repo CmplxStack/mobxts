@@ -1,23 +1,19 @@
-import React, { Component } from "react";
-import { hot } from "react-hot-loader";
+import React from "react";
+import { hot } from "react-hot-loader/root";
 import logo from "@assets/logo.svg";
 import "./App.css";
-import { Counter } from "@components/Counter";
-// import { observer } from 'mobx-react';
+import { Counter, Counter2 } from "@components/Counter";
 
-class App extends Component {
-  render(): JSX.Element {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Counter />
+        <Counter2 />
+      </header>
+    </div>
+  );
+};
 
-          <Counter />
-          {/* {Counter()} */}
-        </header>
-      </div>
-    );
-  }
-}
-
-export default hot(module)(App);
+export default hot(App);
