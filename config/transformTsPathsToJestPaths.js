@@ -1,5 +1,5 @@
-const tsconfig = require('./tsconfig.json');
-const path = require('path');
+const tsconfig = require("./tsconfig.json");
+const path = require("path");
 
 /**
  * Transforms tsconfig paths to Jest compatible moduleNameMapper syntax
@@ -8,17 +8,17 @@ const path = require('path');
  * @param {Object} tsconfig
  */
 export const transformTsPathsToJestPaths = (tsconfig) => {
-  const { paths = {}, baseUrl = '' } = tsconfig.compilerOptions;
-  const resolvedBase = path.join('<rootDir>', baseUrl);
+  const { paths = {}, baseUrl = "" } = tsconfig.compilerOptions;
+  const resolvedBase = path.join("<rootDir>", baseUrl);
   return Object.keys(paths).reduce(
     (acc, key) =>
-      key === '*'
+      key === "*"
         ? acc
         : {
             ...acc,
-            ['^' + key.replace('*', '(.*)') + '$']: path.join(
+            ["^" + key.replace("*", "(.*)") + "$"]: path.join(
               resolvedBase,
-              paths[key][0].replace('*', '$1'),
+              paths[key][0].replace("*", "$1"),
             ),
           },
     {},
