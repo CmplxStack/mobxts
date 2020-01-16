@@ -1,2 +1,152 @@
 {
+  "sync.gist": "20f2c5a2bd828f277c25b12f7f5e68d5",
+  "editor.suggest.insertMode": "replace",
+  "keyboard.touchbar.enabled": false,
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue"],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.wordWrap": "bounded",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // "source.fixAll": true,
+    // "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.renderLineHighlight": "all",
+  "editor.tabCompletion": "on",
+  "editor.showFoldingControls": "always",
+  "editor.lineHeight": 18,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "FuraCode Nerd Font, RobotoMono Nerd Font, Menlo",
+  // "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontLigatures": false,
+  "editor.minimap.enabled": false,
+  "editor.find.autoFindInSelection": "multiline",
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "editor.matchBrackets": "never",
+  "bracket-pair-colorizer-2.colors": ["White", "LightSkyBlue"],
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.8"
+  ],
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 0px 1px 0px 0px",
+    "borderColor : {color}",
+    "opacity: 0.8"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#388E3C",
+    "activityBar.activeBorder": "#388E3C",
+    "list.activeSelectionForeground": "#388E3C",
+    "list.inactiveSelectionForeground": "#388E3C",
+    "list.highlightForeground": "#388E3C",
+    "scrollbarSlider.activeBackground": "#388E3C50",
+    "editorSuggestWidget.highlightForeground": "#388E3C",
+    "textLink.foreground": "#388E3C",
+    "progressBar.background": "#388E3C",
+    "pickerGroup.foreground": "#388E3C",
+    "tab.activeBorder": "#388E3C",
+    "notificationLink.foreground": "#388E3C",
+    "editorWidget.resizeBorder": "#388E3C",
+    "editorWidget.border": "#388E3C",
+    "settings.modifiedItemIndicator": "#388E3C",
+    "settings.headerForeground": "#388E3C",
+    "panelTitle.activeBorder": "#388E3C",
+    "breadcrumb.activeSelectionForeground": "#388E3C",
+    "menu.selectionForeground": "#388E3C",
+    "menubar.selectionForeground": "#388E3C",
+    "editor.findMatchBorder": "#388E3C",
+    "selection.background": "#388E3C40"
+  },
+  "materialTheme.accent": "Breaking Bad",
+  "material-icon-theme.folders.associations": {
+    "plop": "Helper",
+    "Firebase": "Database",
+    "Axios": "Api",
+    "Instance": "Api",
+    "Rest": "Database",
+    "Interfaces": "Meta",
+    "State": "Server",
+    "Models": "Class",
+    "Stores": "Container"
+  },
+  "turboConsoleLog.logMessagePrefix": "_LOG_",
+  "turboConsoleLog.wrapLogMessage": true,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "editor.parameterHints.cycle": true,
+  "versionlens.showVersionLensesAtStartup": false,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "ts-node -T --skip-project"
+  },
+  "typescript.preferences.quoteStyle": "double",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "gitlens.codeLens.enabled": false,
+  "editor.suggest.shareSuggestSelections": true,
+  "todo-tree.highlights.highlightDelay": 200,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "checklist",
+      "type": "tag",
+      "iconColour": "green",
+      "foreground": "green"
+    },
+    "NOTE": {
+      "icon": "info",
+      "type": "tag",
+      "iconColour": "white",
+      "foreground": "white"
+    },
+    "FIXME": {
+      "icon": "bug",
+      "type": "tag",
+      "foreground": "red",
+      "iconColour": "red"
+    },
+    "REFACTOR": {
+      "icon": "tools",
+      "type": "tag",
+      "iconColour": "cyan",
+      "foreground": "cyan"
+    }
+  },
+  "todo-tree.general.tags": ["TODO", "NOTE", "FIXME", "REFACTOR"],
+  "todo-tree.general.statusBar": "tags",
+  "todo-tree.tree.labelFormat": "${tag} - ${after}",
+  "todo-tree.general.revealBehaviour": "highlight line",
+  "explorer.compactFolders": false,
+  "terminal.integrated.experimentalRefreshOnResume": true,
+  "terminal.integrated.fontFamily": "FuraCode Nerd Font, Menlo"
 }
